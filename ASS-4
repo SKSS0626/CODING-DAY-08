@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+	int i1,i2,i3,i4,i5,bill,tbill;
+	printf("Enter the cost of 1st items:");
+	scanf("%d",&i1);
+	printf("Enter the cost of 2nd items:");
+	scanf("%d",&i2);
+	printf("Enter the cost of 3rd items:");
+	scanf("%d",&i3);
+	printf("Enter the cost of 4th items:");
+	scanf("%d",&i4);
+	printf("Enter the cost of 5th items:");
+	scanf("%d",&i5);
+	bill=i1+i2+i3+i4+i5;
+	if(bill>=1000)
+	{
+	tbill=bill+(bill*(0.1));
+	}
+	else if(bill>=700)
+	{
+	tbill=bill+(bill*(0.07));
+}
+	else if(bill>=500)
+	{
+	tbill=bill+(bill*(0.05));
+}
+	else if(bill>=200)
+	{
+    tbill=bill+(bill*(0.03));
+}
+    else
+    tbill=bill;
+    printf("Total bill is:%d",tbill);
+	return 0;
+}
